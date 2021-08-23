@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class Main{
+  public static void main(String[] args){
+    //Write your code here
+    
+  }
+  //isNUmique
+  static int isNUnique(int[] a, int n){
+    if(a.length == 0) return 0;
+    int countUnique = 0;
+    
+    for(int i = 0; i < a.length; i++){
+      for(int j = i + 1; j < a.length; j++){
+        if(a[i] + a[j] == n) countUnique++;
+      }
+    }
+        return countUnique == 1 ? 1 : 0;
+  }
+}
