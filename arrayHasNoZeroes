@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Main{
+  public static void main(String[] args){
+    //Write your code here
+    
+  }
+  static int arrayHasNoZeroes(int[] a){
+    if(a.length == 0) return 0;
+    for(int i : a){
+      if(i == 0) return 0;
+    }
+      return 1;
+  }
+}
