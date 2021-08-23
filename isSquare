@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class Main{
+  public static void main(String[] args){
+    //Write your code here
+    
+  }
+  //isSquare 
+  static int isSquare(int n){
+    if(n == 0) return 0;
+    int result = 0;
+    for(int i = 1; i < n; i++){
+      result = i * i;
+      if(result == n) return 1;
+      if(result > n) return 0;
+    }
+      return 0;
+  }
+}
