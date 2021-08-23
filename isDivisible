@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Main{
+  public static void main(String[] args){
+    //Write your code here
+    
+  }
+  //isDivisible
+  static int isDivisible(int[] a, int divisor){
+    if(divisor == 0) return 0;
+    for(int i : a){
+      if(i % divisor != 0) return 0;
+    }
+      return 1;
+  } 
+}
