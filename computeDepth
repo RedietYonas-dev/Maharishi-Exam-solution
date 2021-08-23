@@ -1,0 +1,37 @@
+import java.util.*;
+
+public class Main{
+  public static void main(String[] args){
+    //Write your code here
+    System.out.println(computeDepth(7));
+  }
+
+static int computeDepth(int n){
+  if(n == 0) return 0;
+  int value = 0;
+  int digit = 0;
+  int[] arrayDigit = new int[10];
+  int max = Integer.MAX_VALUE;
+  boolean checkDigit = false;
+  int k = 0;
+  
+  for(int i = 1; i < max; i++){
+    value = n * i;
+      while(value != 0){
+        digit = value % 10;
+          for(int j = 1; j < arraDigit.length; j++){
+            if(digit == a[j]) checkDigit = true;
+          }
+            if(checkDigit){
+              checkDigit = false;
+              arrayDigit[k] = digit;
+                if(k == arrayDigit.length){
+                    return i;
+                }
+              k++;              
+            }
+      }            
+  }
+      return 0;
+}
+}
