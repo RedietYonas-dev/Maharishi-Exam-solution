@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Main{
+  public static void main(String[] args){
+  //Write your code here
+    System.out.println(henry(1, 3));
+  }
+  //perfect number
+    
+  static int henry(int i, int j){
+    int max = Integer.MAX_VALUE;
+    int num1 = 0;
+    int num2 = 0;
+    int count = 0;
+    int sumFactor = 0;
+    
+    for(int number = 1; number < max; number++){
+      for(int factor = 1; factor < number/2; factor++){
+          if(number % factor == 0) sumFactor += factor;
+      }
+          if(number == sumFactor){
+            count++;
+              if(count == i) num1 = number;
+              if(count == j) num2 = number;
+                if(num1 != 0 && num2 != 0){
+                  return num1 + num2;
+                }
+          }
+       sumFactor = 0;   
+    }
+      return 0;
+  }
+}
